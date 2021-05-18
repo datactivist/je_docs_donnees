@@ -1,0 +1,140 @@
+---
+title: "Manager la donnée dans l'ESR : une approche par les métiers et compétences"
+subtitle: "Journée d’étude \"Documents et données : l’université à l’ère de la transition numérique\""
+author: "Antoine Blanchard et Romain Pierronnet"
+date: "26 mai 2021"
+output:
+  SlidesDatactivist::moon_reader:
+    seal: true
+    anchor_sections: false
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: ["macros.js", "matomo.js", "https://platform.twitter.com/widgets.js"]
+params:
+  event: JE Documents et données
+  slug: je_docs_donnees
+---
+layout: true
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><a href='https://datactivist.coop/'><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'></a></div></center></span></div>")`
+
+---
+
+class: center, middle
+
+Ces slides en ligne : `r paste0("http://datactivist.coop/", params$slug)`
+
+Sources : `r paste0("https://github.com/datactivist/", params$slug)`
+
+
+Diaporama librement réutilisable selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+<br />
+<br />
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+---
+## Place des données dans la stratégie des universités
+
+L'analyse de plusieurs schémas directeurs numériques fait apparaître sept enjeux de la donnée :
+- données de la recherche
+- innovation pédagogique (*learning analytics*)
+- formation et sensibilisation
+- cohérence du SI
+- pilotage par la donnée
+- datacenter
+- open data
+
+Les données apparaissent donc comme une composante du patrimoine informationnel des universités (où elles sont présentées comme étant à protéger et à valoriser), sous-tendu par des infrastructures (qui seraient à développer) et des processus de gestion (qui seraient à moderniser) qui rendent possibles des usages institutionnels, notamment à des fins de pilotage (qui seraient à diffuser et à accompagner).
+
+---
+
+## Une stratégie de la donnée appuyée sur des métiers et compétences spécifiques
+
+Mettre en œuvre cette stratégie, dans un contexte de nouvelles pratiques issues de la LRU (2007), nécessite des profils spécialisés et compétents dans la collecte, le stockage, le traitement et l’administration des données.
+
+<insérer schéma Amue sur le cycle de vie de la donnée>
+
+---
+
+## .red[2017] : une GPEEC pour la filière numérique de l'État
+
+[![:abs 24%, 2%, 33%](img/Circulaire_2017.png)](https://www.legifrance.gouv.fr/download/pdf/circ?id=41952)
+.right-column[Cette circulaire du Premier ministre charge la DINSIC et la DGAFP « de mettre en place un plan d’action permettant d’attirer, de recruter et de fidéliser ces compétences rares » à travers la réalisation d’une gestion prévisionnelle des emplois et des compétences (GPEEC) interministérielle et la construction d’un référentiel de rémunération par métier SIC pour éviter toute politique de concurrence entre ministères.]
+
+---
+
+## .red[janvier 2019] : une attention portée au métier de datascientist
+
+[![:abs 24%, 2%, 33%](img/Gilet_2019.png)](https://www.economie.gouv.fr/files/files/directions_services/cgefi/Rapport-strategie-RH-filiere-numerique-SIC-CGEFI_CGEIE_IGA_janvier-2019.pdf)
+.right-column[Ce rapport met en évidence 13 métiers en tension au sein de l’État dans la filière du numérique et des systèmes d’information et de communication (NSIC). Parmi ceux-ci, un métier apparaît comme « critique », « affichant un besoin total en 2020 de 1,6 fois le nombre d’agents actuellement en poste » : il s’agit du **métier de *data scientist*, à la fois considéré comme « rare » et « stratégique »**.]
+
+---
+
+## .red[2020] : un coup de semonce
+
+[![:abs 24%, 2%, 28%](img/Mission_Bothorel.png)](https://www.gouvernement.fr/sites/default/files/contenu/piece-jointe/2020/12/rapport_-_pour_une_politique_publique_de_la_donnee_-_23.12.2020__0.pdf)
+.right-column[La Mission Bothorel s'attarde sur les « compétences disponibles pour mettre en œuvre [la] politique » de la donnée et des codes sources de l’État. Elle rappelle notamment que **la GPEEC interministérielle spécifique à la filière NSIC « n’a pas réellement démarré, faute de priorisation suffisante »**.
+
+Elle cite en annexe le *Digital, Data and Technology Profession Capability Framework* du service interministériel britannique des projets numériques, le *Government Digital Service*, afin « d’aider les organisations du secteur public à mieux comprendre et recruter les professionnels de la donnée et de constituer un groupe d’agents publics disposant de connaissances sur ces sujets ». **Ce cadre de référence  met en avant plusieurs métiers : *data scientist*, mais aussi *data analyst*, *data engineer*, et *performance analyst***.]
+
+---
+class:center,inverse, middle
+
+# Désormais réputées autonomes, où en sont les universités dans leur management des métiers et compétences de la donnée ? 
+
+---
+class:center,inverse, middle
+
+# Les métiers de la donnée vus par les emplois-types RéFérens
+
+.footnote[Blanchard A., Wenden B. (2021). Analyse statistique des emplois-types RéFérens relatifs à la donnée, R, version 1.0, http://doi.org/10.5281/zenodo.4730582]
+---
+
+## À propos de RéFérens
+
+RéFérens est le répertoire des branches d’activités professionnelles et des emplois-types des ingénieurs et personnels techniques de recherche et de formation des universités (ITRF) et des ingénieurs et personnels techniques de recherche du CNRS (ITA) – soit plus de 70% des personnels BIATSS titulaires en 2018.
+
+Il comprend **242 emplois-types, 8 branches d’activités professionnelles (BAP), 35 familles d’activités professionnelles (FAP), et 5 corps** :
+- ATRF = adjoint technique
+- TECH = technicien
+- AI = assistant ingénieur
+- IE = ingénieur d'études
+- IR = ingénieur de recherche
+
+---
+
+## La donnée, une compétence opérationnelle et une activité principale
+
+![:abs 43%, 25%, 26%](img/frequence_par_variable-1.png)
+
+???
+
+Comme on pouvait s’y attendre, le terme données apparaît le plus dans les champs qui décrivent les compétences opérationnelles (rang 1) et les activités principales (rang 2) des fiches métiers. Il apparaît assez peu dans l’intitulé des fiches métiers, qui est au 9e rang. Au 6e rang, donc assez haut, on trouve le champ “Facteurs d’évolution à moyen terme” du métier qui vise, selon la documentation de RéFérens, à identifier les facteurs clés et en déduire leur impact qualitatif sur le métier.
+
+---
+
+## La donnée, facteur majeur d'évolution à moyen terme des emplois-types
+
+```{r referens_facteurs_d_evolution_moyen_terme}
+data_filtered %>%
+  unnest_tokens(word, referens_facteurs_d_evolution_moyen_terme) %>%
+      mutate(stem = wordStem(word)) %>%
+  anti_join(get_stopwords(language = "fr")) %>%
+  count(stem, sort = TRUE) %>%
+  filter(n >25) 
+
+```
+
+---
+
+## 154 fiches métiers contiennent le terme "données"
+
+![:abs 55%, 25%, 26%](img/distribution_corps_avec_intitule-1.png)
+
