@@ -25,6 +25,11 @@ layout: true
 
 ---
 
+```{r , include=FALSE}
+load("../analyse_referens/my_workspace.RData")
+library(DT, quietly = TRUE)
+```
+
 class: center, middle
 
 Ces slides en ligne : `r paste0("http://datactivist.coop/", params$slug)`
@@ -110,7 +115,7 @@ Il comprend **242 emplois-types, 8 branches d’activités professionnelles (BAP
 
 ---
 
-## La donnée, une compétence opérationnelle et une activité principale
+## .red[La donnée], une compétence opérationnelle et une activité principale
 
 ![:abs 43%, 25%, 26%](img/frequence_par_variable-1.png)
 
@@ -120,21 +125,39 @@ Comme on pouvait s’y attendre, le terme données apparaît le plus dans les ch
 
 ---
 
-## La donnée, facteur majeur d'évolution à moyen terme des emplois-types
+## .red[La donnée], facteur majeur d'évolution à moyen terme des emplois-types
 
-```{r referens_facteurs_d_evolution_moyen_terme}
-data_filtered %>%
-  unnest_tokens(word, referens_facteurs_d_evolution_moyen_terme) %>%
-      mutate(stem = wordStem(word)) %>%
-  anti_join(get_stopwords(language = "fr")) %>%
-  count(stem, sort = TRUE) %>%
-  filter(n >25) 
+“données” est le troisième terme le plus fréquent dans le champ “Facteurs d’évolution à moyen terme” des fiches métiers.
 
-```
+
+|racine      |occurrences      |
+|--------- |------:|
+| développ | 108   |
+|  gestion | 45    |
+| **donné** | **43**|
+|   evolut | 36    |
+| techniqu | 34    |
+| numériqu |  30   |
+|   nouvel | 26    |
+| recherch | 26    |
+
+???
+
+Ce qui conforte notre analyse sur l’importance de la donnée dans le développement de l’université et des compétences de ses agents.
 
 ---
 
 ## 154 fiches métiers contiennent le terme "données"
 
 ![:abs 55%, 25%, 26%](img/distribution_corps_avec_intitule-1.png)
+---
 
+## 13 métiers de la donnée
+
+Les fiches métiers où le terme apparaît le plus (≥ 17 fois), sinon dans l’intitulé, forment une liste de 13 "métiers de la donnée”.
+
+```{r eval=require('DT'), tidy=FALSE, echo=FALSE}
+DT::datatable(
+  metiers_donnee,
+  fillContainer = FALSE, options = list(pageLength = 2))
+```

@@ -8,6 +8,15 @@
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+    <script src="libs/jquery-3.5.1/jquery.min.js"></script>
+    <link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="libs/datatables-binding-0.18.1/datatables.js"></script>
+    <link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+    <link href="libs/crosstalk-1.1.1.9000/css/crosstalk.css" rel="stylesheet" />
+    <script src="libs/crosstalk-1.1.1.9000/js/crosstalk.min.js"></script>
   </head>
   <body>
     <textarea id="source">
@@ -25,6 +34,8 @@ layout: true
 &lt;div class='my-footer'&gt;&lt;span&gt;JE Documents et données&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;a href='https://datactivist.coop/'&gt;&lt;img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'&gt;&lt;/a&gt;&lt;/div&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt;
 
 ---
+
+
 
 class: center, middle
 
@@ -111,7 +122,7 @@ Il comprend **242 emplois-types, 8 branches d’activités professionnelles (BAP
 
 ---
 
-## La donnée, une compétence opérationnelle et une activité principale
+## .red[La donnée], une compétence opérationnelle et une activité principale
 
 ![:abs 43%, 25%, 26%](img/frequence_par_variable-1.png)
 
@@ -121,185 +132,39 @@ Comme on pouvait s’y attendre, le terme données apparaît le plus dans les ch
 
 ---
 
-## La donnée, facteur majeur d'évolutation à moyen terme des emplois-types
+## .red[La donnée], facteur majeur d'évolution à moyen terme des emplois-types
+
+“données” est le troisième terme le plus fréquent dans le champ “Facteurs d’évolution à moyen terme” des fiches métiers.
+
+
+|racine      |occurrences      |
+|--------- |------:|
+| développ | 108   |
+|  gestion | 45    |
+| **donné** | **43**|
+|   evolut | 36    |
+| techniqu | 34    |
+| numériqu |  30   |
+|   nouvel | 26    |
+| recherch | 26    |
+
+???
+
+Ce qui conforte notre analyse sur l’importance de la donnée dans le développement de l’université et des compétences de ses agents.
 
 ---
 
 ## 154 fiches métiers contiennent le terme "données"
 
 ![:abs 55%, 25%, 26%](img/distribution_corps_avec_intitule-1.png)
-
-
-
 ---
 
-## L'infrastructure : ce qui rend possible
+## 13 métiers de la donnée
 
-### Quelques extraits de schémas directeurs numériques
+Les fiches métiers où le terme apparaît le plus (≥ 17 fois), sinon dans l’intitulé, forment une liste de 13 "métiers de la donnée”.
 
-À propos des datacenter :
-&gt; « lancer la construction d’un datacenter à l’état de l’art » pour faire face aux « besoins croissants des usagers, et de la Recherche en particulier, en termes de stockage, sauvegarde, archivage et sécurisation des données » (Université de Strasbourg)
-
-&gt; « un DataCenter qu’il reste à consolider en améliorant la sécurité d’hébergement des données, à augmenter la capacité de stockage » (Université de Nantes)
-
-&gt; « construction de la deuxième tranche du Datacenter » (Université de Bourgogne)
-
-À propos de la couche de services :
-&gt; « promouvoir la diffusion des savoirs et la valorisation du patrimoine intellectuel produit à l’université comme les publications scientifiques ou les données de la recherche en développant des services dédiés à forte valeur ajoutée » (Université de Strasbourg)
-
-???
-
-J'en profite pour vous prier de m'envoyer votre SDN, c'est une matière très riche pour analyser les stratégies de transfonum du sup.
-
----
-## L'infrastructure : ce qui rend possible
-
-### Faire ou ne pas faire d'entrepôt institutionnel pour les données de la recherche ?
-
-Le MESRI a annoncé le 11 mai le lancement prochain d'un entrepôt national pour les données de la recherche : recherche.data.gouv.fr. Cet entrepôt sera confié à Inrae (chef de projet : Esther Dzale Yeumo) pour 3 ans d'incubation avant d'adopter sa forme définitive.
-
-- Début 2022 : lancement de l'entrepôt
-- 2022-2023 : campagnes d'alimentation avec les sites universitaires (ateliers de la donnée), des acteurs de l'édition et des archives ouvertes
-- 2023-2024 : moissonnage d'entrepôts tiers
-
----
-## L'infrastructure : ce qui rend possible
-
-.pull-left[### Au niveau international, des infrastructures fortement interconnectées et économiquement fragiles]
-
-![:abs 44%, 7%, 38%](img/E1XntppXIAIi605.png)
-
-.pull-right[.footnote[Ficarra, Victoria, Fosci, Mattia, Chiarelli, Andrea, Kramer, Bianca, &amp; Proudman, Vanessa. (2020, October 30). Scoping the Open Science Infrastructure Landscape in Europe. Zenodo. http://doi.org/10.5281/zenodo.4159838]]
-
-???
-
-Exemples : ORCID, Crossref, OpenAIRE, DOAJ, BASE, Wikimedia, DataCite, OpenAIRE…
-
----
-
-## L'expérience utilisateur : ce qui rend facile
-
-### Exemple de HAL
-
-.pull-left[
-&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="fr" dir="ltr"&gt;&lt;a href="https://twitter.com/totoroinparis?ref_src=twsrc%5Etfw"&gt;@totoroinparis&lt;/a&gt; &lt;a href="https://twitter.com/mapav8?ref_src=twsrc%5Etfw"&gt;@mapav8&lt;/a&gt; &lt;a href="https://twitter.com/yprie?ref_src=twsrc%5Etfw"&gt;@yprie&lt;/a&gt; bon ce qui serait bien c&amp;#39;est que HAL embauche un ergonome. Ou ait juste un peu de bon sens.&lt;/p&gt;&amp;mdash; Joel Gombin (@joelgombin) &lt;a href="https://twitter.com/joelgombin/status/224530772827176960?ref_src=twsrc%5Etfw"&gt;July 15, 2012&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-]
-
---
-
-.pull-right[
-&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="fr" dir="ltr"&gt;Refonte de l’ergonomie de &lt;a href="https://twitter.com/hal_fr?ref_src=twsrc%5Etfw"&gt;@hal_fr&lt;/a&gt; : les projets en cours &lt;a href="https://twitter.com/hashtag/scienceouverte?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#scienceouverte&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/UrfistHAL_LO?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#UrfistHAL_LO&lt;/a&gt; &lt;a href="https://twitter.com/nfargier?ref_src=twsrc%5Etfw"&gt;@nfargier&lt;/a&gt; &lt;a href="https://t.co/LKNfSeqAtR"&gt;pic.twitter.com/LKNfSeqAtR&lt;/a&gt;&lt;/p&gt;&amp;mdash; CCSD (@ccsd_fr) &lt;a href="https://twitter.com/ccsd_fr/status/1390242511935967232?ref_src=twsrc%5Etfw"&gt;May 6, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-]
-
----
-
-## L'expérience utilisateur : ce qui rend facile
-
-### Accompagnement des chercheurs
-
-.pull-left[
-&lt;blockquote class="twitter-tweet" data-conversation="none"&gt;&lt;p lang="fr" dir="ltr"&gt;Quand je lis &lt;a href="https://twitter.com/marindacos?ref_src=twsrc%5Etfw"&gt;@marindacos&lt;/a&gt; « Dans de nombreuses disciplines, il n’y a pas ou peu de culture de partage et de documentation des données », j&amp;#39;ai envie de répondre : dans de nombreuses discipline on n&amp;#39;y est pas formé et il n&amp;#39;existe aucun soutien pour le faire. &lt;a href="https://t.co/4GFrpE3NQx"&gt;https://t.co/4GFrpE3NQx&lt;/a&gt;&lt;/p&gt;&amp;mdash; FX Coudert (@fxcoudert) &lt;a href="https://twitter.com/fxcoudert/status/1225061583673593856?ref_src=twsrc%5Etfw"&gt;February 5, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-]
-
---
-
-.pull-right[
-Selon [une enquête de l'Université Rennes 2](https://hal.archives-ouvertes.fr/hal-01635186v2) (2017) :
-
-&gt; Au moins un tiers des personnes interrogées sollicitent explicitement l’appui d’ingénieurs pour les accompagner sur le plan technique dans le stockage et l’archivage de leurs données.
-]
----
-
-## Les communautés : ce qui rend normal
-
-.pull-left[- La recherche a un fonctionnement collectif, c'est la communauté qui fixe les normes et c'est l'imitation qui permet de faire évoluer les pratiques (ou de sanctionner les déviances).
-
-- La bataille est quasiment gagnée sur le front des publications&amp;nbsp;; elle  ne l'est pas encore sur le front des données.
-
-- Les chercheurs senior (et pas les doctorants qu'on forme massivement) ont une responsabilité.
-
-- Il est également possible de fédérer des "champions" de la science ouverte.]
-
-.pull-right[.reduite3[![](img/INOSC.png)]
-
-[“Open Science Community Starter Kit”](http://www.startyourosc.com)]
-
-
-???
-La publication est une norme de la communauté (ou de l'éthos de la science selon R. K. Merton).
-
----
-
-## Les incitations : ce qui valorise
-
-&gt; "Pourquoi s'embêter à rendre un travail reproductible si personne ne me le demande ?"
-
-&gt;– Christophe Pouzat (2021), [“Recherche reproductible : c'est quoi ? Pourquoi en faire ? Comment ?”](https://www.societe-informatique-de-france.fr/wp-content/uploads/2021/05/journee-sif-repro-1-pouzat-recherche-repro.pdf)
-
-Science ouverte ou recherche reproductible : il est nécessaire de valoriser les comportements vertueux en science quand ils ont un coût (en temps, en argent...).
-
-À l'Université de Liège, qui a souvent été érigée en modèle, le dépôt n’est pas « obligatoire », mais l’évaluation des chercheurs (pour les demandes de promotions) et l’attribution des crédits ne prennent en compte que ce qui est déposé dans l'archive ouverte. 
-
-Mais en France, le suivi de carrière est national.
-
-Quelques pistes pour les universités :
-- donner des instructions aux comités de visite HCÉRES
-- prendre en compte la science ouverte dans l'évaluation de projets / l'attribution de crédits
-- financer des mini-bourses pour des activités de science ouverte
-
-???
-
-L'évaluation des unités revêt un caractère collectif qui permet de gommer les différences inter-individuelles.
-
-Mini-bourses : exemple tiré de la feuille de route SO d'Utrecht University https://www.uu.nl/sites/default/files/utrecht-university-open-science-programme.pdf
-
----
-
-## Les politiques : ce qui oblige
-
-### La Loi pour une république numérique prévoit :
-
-- [Libre réutilisation des données publiées](https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000033202841) :
-
-&gt; Dès lors que les données **issues d'une activité de recherche financée au moins pour moitié par des dotations de l'Etat**, des collectivités territoriales, des établissements publics, des subventions d'agences de financement nationales ou par des fonds de l'Union européenne ne sont **pas protégées par un droit spécifique ou une réglementation particulière** et qu'elles ont été **rendues publiques** par le chercheur, l'établissement ou l'organisme de recherche, **leur réutilisation est libre**.
-
-- [Open data par défaut](https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000033202965) :
-
-&gt; **Les administrations (…) publient en ligne (…) les bases de données**, mises à jour de façon régulière, qu'elles produisent.
-
-Cet article s'applique aux données de la recherche ([interprétation endossée par le Ministère](https://www.ouvrirlascience.fr/wp-content/uploads/2018/11/Guide_Juridique_V2.pdf)).
-
-???
-
-Le premier article est une obligation imposée aux éditeurs pour permettre aux chercheurs de lutter efficacement contre les tentatives de monopolisation des jeux de données.
-
-Le droit du producteur de bases de données ne peut faire obstacle à la réutilisation du contenu des bases de données que ces administrations publient.
-
----
-
-## Les politiques : ce qui oblige
-
-Au niveau local, une forte production de mandats de libre accès, de chartes, de politiques science ouverte…
-
-&amp;nbsp;
-
-![:abs 25%, 20%, 32%](img/Charte-science-ouverte-2019.png)
-
-![:abs 33%, 50%, 43%](img/Charte_science_ouverte_Lyon3_WEB.png)
-
-???
-
-
----
-
-## Conclusion
-
-Les enjeux de la science ouverte sont loin d'être épuisés.
-
-Ainsi, dans son rapport "Promouvoir et protéger une culture partagée de l'intégrité scientifique" (mars 2021), l'OPECST recommande :
-
-&gt;  Mieux identifier les processus par lesquels les objectifs poursuivis par la politique de la science ouverte peuvent aider au respect et à la promotion de l’intégrité scientifique ; **définir des normes d’archivage et de mise à
-disposition des données de la recherche afin de garantir le contrôle par les pairs des productions scientifiques**.
+<div id="htmlwidget-4b93e3a0a46ee11fe8ea" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4b93e3a0a46ee11fe8ea">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13"],["Assistant-e ingénieur-e biologiste en traitement de données","Ingénieur-e biologiste en traitement de données","Ingénieur-e biologiste en analyse de données","Technicien-ne en production, traitement de données et enquêtes","Assistant-e ingénieur-e en production, traitement de données et enquêtes","Ingénieur-e d’études en production, traitement, analyse de données et enquêtes","Ingénieur-e de recherche en production, traitement et analyse de données","Assistant-e statisticien-ne","Administrateur-trice de bases de données / Intégrateur d'applications","Ingénieur-e statisticien-ne","Chargé-e de l'édition de corpus numériques","Chargé-e du traitement des données scientifiques","Gestionnaire de données et indicateurs patrimoniaux"],["","epidémiologiste|bio informaticien","epidémiologiste|bio informaticien","","","","",null,"administrateur de bases de données (dba)",null,"éditeur de données scientifiques","",""],["BAP A - Sciences du vivant, de la terre et de l’environnement","BAP A - Sciences du vivant, de la terre et de l’environnement","BAP A - Sciences du vivant, de la terre et de l’environnement","BAP D - Sciences Humaines et Sociales","BAP D - Sciences Humaines et Sociales","BAP D - Sciences Humaines et Sociales","BAP D - Sciences Humaines et Sociales","BAP E - Informatique, Statistiques et Calcul scientifique","BAP E - Informatique, Statistiques et Calcul scientifique","BAP E - Informatique, Statistiques et Calcul scientifique","BAP F - Culture, Communication, Production et diffusion des savoirs","BAP F - Culture, Communication, Production et diffusion des savoirs","BAP G - Patrimoine immobilier, Logistique, Restauration et Prévention"],["Biologie et santé, Sciences de la vie et de la terre","Biologie et santé, Sciences de la vie et de la terre","Biologie et santé, Sciences de la vie et de la terre","Production, traitement et analyse des données","Production, traitement et analyse des données","Production, traitement et analyse des données","Production, traitement et analyse des données","Statistiques","Ingénierie technique et de production","Statistiques","Édition et graphisme","Information scientifique et technique, documentation et collections patrimoniales","Patrimoine immobilier"],["AI","IE","IR","TECH","AI","IE","IR","AI","IE","IE","IE","IE","AI"],["125","230","178","101","106","160","123","161","116","215","91","146","80"],[23,null,null,25,24,29,35,21,20,17,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>referens_intitule<\/th>\n      <th>referens_metiers<\/th>\n      <th>bap<\/th>\n      <th>referens_fap<\/th>\n      <th>referens_cs<\/th>\n      <th>Id<\/th>\n      <th>somme<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":2,"columnDefs":[{"className":"dt-right","targets":7},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[2,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
