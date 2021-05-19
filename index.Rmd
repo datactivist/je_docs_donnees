@@ -64,7 +64,7 @@ Les données apparaissent donc comme une composante du patrimoine informationnel
 
 Mettre en œuvre cette stratégie, dans un contexte de nouvelles pratiques issues de la LRU (2007), nécessite des profils spécialisés et compétents dans la collecte, le stockage, le traitement et l’administration des données.
 
-<insérer schéma Amue sur le cycle de vie de la donnée>
+--> insérer schéma Amue sur le cycle de vie de la donnée
 
 ---
 
@@ -145,11 +145,34 @@ Comme on pouvait s’y attendre, le terme données apparaît le plus dans les ch
 
 Ce qui conforte notre analyse sur l’importance de la donnée dans le développement de l’université et des compétences de ses agents.
 
+Etonnamment, aucune fiche métier de la BAP J ne considére la donnée pour son évolution moyen terme. Pourtant, les entretiens que nous avons menés montrent que le domaine du pilotage est fortement amené à évoluer dans le contexte de la donnée.
+
+---
+
+## .red[La donnée], dénominateur commun des BAP D et E
+
+![:abs 63%, 18%, 32%](img/frequence_par_BAP-1.png)
+
+???
+
+L’étude des branches d’activités professionnelles montre que les BAP E Informatique, statistiques et calcul scientifique et BAP D Sciences humaines et sociales possèdent en proportion la plus grande part de métiers liés aux données. Par ailleurs, les BAP A, B et C qui concernent le soutien à la recherche sont moins concernées par les données que les BAP F et J qui sont liés à l’administration de l’université.
+
+---
+
+## .red[La donnée] progresse avec le niveau d'emploi
+
+![:abs 52%, 20%, 27%](img/frequence_par_corps-1.png)
+
+
 ---
 
 ## 154 fiches métiers contiennent le terme "données"
 
 ![:abs 55%, 25%, 26%](img/distribution_corps_avec_intitule-1.png)
+???
+
+On regarde la concentration du terme données par fiche métier.
+
 ---
 
 ## 13 métiers de la donnée
