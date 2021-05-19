@@ -166,7 +166,7 @@ L’étude des branches d’activités professionnelles montre que les BAP E Inf
 
 ---
 
-## 154 fiches métiers contiennent le terme "données"
+## .red[La donnée], présente dans 154 fiches métiers
 
 ![:abs 55%, 25%, 26%](img/distribution_corps_avec_intitule-1.png)
 ???
@@ -175,9 +175,9 @@ On regarde la concentration du terme données par fiche métier.
 
 ---
 
-## 13 métiers de la donnée
+## Les 13 métiers de la donnée
 
-Les fiches métiers où le terme apparaît le plus (≥ 17 fois), sinon dans l’intitulé, forment une liste de 13 "métiers de la donnée”.
+Nous avons défini une liste de 13 "métiers de la donnée” où le terme apparaît le plus (≥ 17 fois), sinon dans l’intitulé.
 
 ```{r eval=require('DT'), tidy=FALSE, echo=FALSE}
 DT::datatable(
