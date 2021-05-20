@@ -64,7 +64,8 @@ Les données apparaissent donc comme une composante du patrimoine informationnel
 
 Mettre en œuvre cette stratégie, dans un contexte de nouvelles pratiques issues de la LRU (2007), nécessite des profils spécialisés et compétents dans la collecte, le stockage, le traitement et l’administration des données.
 
---> insérer schéma Amue sur le cycle de vie de la donnée
+[![:abs 48%, 25%, 44%](img/LaDonneeESRVueParAMUE.PNG)](http://www.amue.fr/fileadmin/amue/systeme-information/documents-publications/la-collection-numerique/N__06_-_L_ESR_vu_par_le_prisme_de_la_donnee_universitaire_.pdf)
+
 
 ---
 
