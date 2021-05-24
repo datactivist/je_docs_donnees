@@ -118,6 +118,8 @@ Il comprend **242 emplois-types, 8 branches d’activités professionnelles (BAP
 
 Les fiches métiers ne correspondent pas aux fiches de postes locales mais ce sont de bons archétypes issus d'un travail collectif.
 
+Les métiers des bibliothèques y sont représentés par 7 emplois-types, contre 7 emplois-types dans Bibliofil' et 4 dans REME. Les métiers des archives s'y retrouvent également.
+
 ---
 
 ## .red[La donnée], une compétence opérationnelle et une activité principale
@@ -180,9 +182,9 @@ On regarde la concentration du terme données par fiche métier.
 
 ---
 
-## Les 13 métiers de la donnée
+## Les 13 emplois-types de la donnée
 
-Nous avons défini une liste de 13 "métiers de la donnée” où le terme apparaît le plus (≥ 17 fois), sinon dans l’intitulé.
+Nous avons défini une liste de 13 "emplois-types de la donnée” où le terme apparaît le plus (≥ 17 fois), sinon dans l’intitulé.
 
 ```{r eval=require('DT'), tidy=FALSE, echo=FALSE}
 DT::datatable(
@@ -279,11 +281,34 @@ Nous proposons de les affiner selon les quatre dimensions d'un profil de compét
 - production - écrire des données
 - communication - partager des données
 
-.footnote[Labelle S., Gilliard A., Haÿ L. (2017). « [Datactive : Cultivez vos capacités à jouer avec des données](https://frama.link/datactive) »
-Tessier, L. et Tremion, V. (2019). « La certification des compétences numériques dans les universités françaises : du C2i à Pix », Revista Universitara de Sociologie, XV, n° Hors-Série 2, p. 13‑23
+.footnote[<p>&nbsp;</p>Labelle S., Gilliard A., Haÿ L. (2017). « [Datactive : Cultivez vos capacités à jouer avec des données](https://frama.link/datactive) »
+<br />Tessier, L. et Tremion, V. (2019). « La certification des compétences numériques dans les universités françaises : du C2i à Pix », *Revista Universitara de Sociologie*, XV, n° Hors-Série 2, p. 13‑23
 <br />]
 
 ---
 class:center,inverse, middle
 
-# Conclusion
+# Perspectives
+
+---
+
+## Pistes d'approfondissement
+
+Il serait possible de poursuivre l'analyse en :
+- étudiant la place de l'enjeu de la donnée dans la prospective métiers utilisée en GPEC
+- interrogeant les facteurs d'évolution des métiers et besoins de formation identifiés lors des entretiens professionnels
+- analysant les profils de poste ouverts au recrutement.
+
+---
+class:center,inverse, middle
+
+# Merci de votre attention !
+
+<br />
+<br />
+
+### antoine@datactivist.coop
+### romain.pierronnet@u-pec.fr
+
+???
+
