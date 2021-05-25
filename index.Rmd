@@ -76,7 +76,7 @@ Mettre en œuvre cette stratégie, dans un contexte de nouvelles pratiques issue
 
 ---
 
-## .red[janvier 2019] : une attention portée au métier de datascientist
+## .red[janvier 2019] : une attention portée au métier de data scientist
 
 [![:abs 24%, 2%, 33%](img/Gilet_2019.png)](https://www.economie.gouv.fr/files/files/directions_services/cgefi/Rapport-strategie-RH-filiere-numerique-SIC-CGEFI_CGEIE_IGA_janvier-2019.pdf)
 .right-column[Ce rapport met en évidence 13 métiers en tension au sein de l’État dans la filière du numérique et des systèmes d’information et de communication (NSIC). Parmi ceux-ci, un métier apparaît comme « critique », « affichant un besoin total en 2020 de 1,6 fois le nombre d’agents actuellement en poste » : il s’agit du **métier de *data scientist*, à la fois considéré comme « rare » et « stratégique »**.]
@@ -219,7 +219,7 @@ Le *[Plan données de la recherche du CNRS](https://www.cnrs.fr/sites/default/fi
 
 > Inventorier tous les rôles joués par les personnels dans la FAIRisation des données et les compétences nécessaires dans ces rôles, pour nourrir et faire évoluer les référentiels d’évaluation des chercheurs et des chercheuses et les référentiels de postes IT (Referens). Cette action conduira à identifier de nouveaux profils et de nouveaux métiers. 
 
-> Cibler les recrutements grâce aux nouveaux profils identifiés et bénéficier ainsi de moyens humains supplémentaires pour accompagner la gestion et le partage des données. (Les moyens humains sont majoritairement IT (data stewards) mais peuvent être aussi des chercheurs ou des chercheuses (data scientists). (…) Le besoin immédiat en ingénieurs est très fort. Il peut faciliter le partage des expériences et des efforts.
+> Cibler les recrutements grâce aux nouveaux profils identifiés et bénéficier ainsi de moyens humains supplémentaires pour accompagner la gestion et le partage des données. (Les moyens humains sont majoritairement IT (*data stewards*) mais peuvent être aussi des chercheurs ou des chercheuses (*data scientists*). (…) Le besoin immédiat en ingénieurs est très fort. Il peut faciliter le partage des expériences et des efforts.
 
 ---
 
@@ -255,9 +255,9 @@ Des entretiens menés dans deux universités fusionnées nous ont montré que :
 
 ## Difficultés à recruter
 
-Les entretiens ont également mis en évidence des demandes de poste refusées (e-archiviste, personnel de soutien à la recherche en unité) et des postes très difficiles à pourvoir (juriste données personnelles, data librarian, développeur).
+Les entretiens ont également mis en évidence des demandes de poste refusées (e-archiviste, personnel de soutien à la recherche en unité) et des postes très difficiles à pourvoir (juriste données personnelles, *data librarian*, développeur).
 
-Il y a une faible lisibilité des métiers de la donnée dans un contexte très technique et en rapide évolution, avec une inflation verbale (« data scientist », « data analyst », « e-archiviste », « administrateur des données », « data stewart », « data librarian »).
+Il y a une faible lisibilité des métiers de la donnée dans un contexte très technique et en rapide évolution, avec une inflation verbale (« *data scientist* », « *data analyst* », « e-archiviste », « administrateur des données », « *data steward* », « *data librarian* »).
 
 Faute de réussir à recruter des titulaires sur des postes mal représentés par les emplois-types RéFérens, des contractuels sont recrutés ou des formations sont organisées pour faire évoluer les compétences.
 
@@ -295,8 +295,7 @@ class:center,inverse, middle
 ## Pistes d'approfondissement
 
 Il serait possible de poursuivre l'analyse en :
-- menant une analyse sémantique des emplois-types
-- étudiant la place de l'enjeu de la donnée dans la prospective métiers utilisée en GPEC
+- étudiant la place de l'enjeu de la donnée dans la prospective métiers utilisée en GPEEC
 - interrogeant les facteurs d'évolution des métiers et besoins de formation identifiés lors des entretiens professionnels
 - analysant les profils de poste ouverts au recrutement.
 
