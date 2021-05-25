@@ -295,6 +295,7 @@ class:center,inverse, middle
 ## Pistes d'approfondissement
 
 Il serait possible de poursuivre l'analyse en :
+- menant une analyse sémantique des emplois-types
 - étudiant la place de l'enjeu de la donnée dans la prospective métiers utilisée en GPEC
 - interrogeant les facteurs d'évolution des métiers et besoins de formation identifiés lors des entretiens professionnels
 - analysant les profils de poste ouverts au recrutement.
