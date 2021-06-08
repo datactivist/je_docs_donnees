@@ -25,9 +25,16 @@ layout: true
 
 ---
 
-```{r , include=FALSE}
+```{r setup, include=FALSE}
 load("../analyse_referens/my_workspace.RData")
+knitr::opts_chunk$set(echo = TRUE)
 library(DT, quietly = TRUE)
+library(ggiraph, quietly = TRUE)
+library(ggplot2, quietly = TRUE)
+library(hrbrthemes, quietly = TRUE)
+library(tidyr, quietly = TRUE)
+library(dplyr, quietly = TRUE)
+library(ggrepel, quietly = TRUE)
 ```
 
 class: center, middle
@@ -170,12 +177,39 @@ L’étude des branches d’activités professionnelles montre que les BAP E Inf
 
 ![:abs 52%, 20%, 27%](img/frequence_par_corps-1.png)
 
-
 ---
 
 ## .red[La donnée], présente dans 154 fiches métiers
 
-![:abs 55%, 25%, 26%](img/distribution_corps_avec_intitule-1.png)
+```{r distribution, echo = FALSE, warning = FALSE, message = FALSE}
+# Il convient d'exécuter le fichier Notebook.rmd avant d'exécuter ce script, qui produit des figures interactives grâce à ggiraph
+
+# Distribution des fiches métiers en fonction du nombre d'occurrences du terme "données"
+distribution_interactive = ggplot(data = distribution_corps_avec_intitule,
+                                  mapping = aes(x = referens_id, y = somme, color=referens_cs, tooltip = referens_intitule)) +
+                                    geom_point_interactive(size = 2) +
+  geom_text_repel(size=2.5,box.padding=0.5,max.overlaps = Inf,force=8, aes(label=ifelse(somme>=17,referens_intitule,'')), show.legend=FALSE,
+    nudge_x           = 0.2,
+    direction         = "both",
+    segment.size      = 0.2,
+    segment.curvature = -0.1,
+    segment.inflect=FALSE) +
+labs(x="Rang", y="Nombre d'occurrences du terme \"données\"", color="Corps",
+     title="Distribution des fiches métiers",
+     caption="Données MESRI – Analyse CC-BY Antoine Blanchard / Datactivist") +
+  scale_color_hue(labels = c("ATRF (Cat. C)", "TECH (Cat. B)", "AI (Cat. A)", "IE (Cat. A)", "IR (Cat. A)")) +
+  theme_ipsum() +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        panel.grid.major.x = element_blank())
+girafe(ggobj = distribution_interactive,
+       options = list(
+         opts_sizing(rescale = TRUE, width = .55)
+         )
+       )
+```
+
 ???
 
 On regarde la concentration du terme données par fiche métier.
@@ -188,8 +222,11 @@ Nous avons défini une liste de 13 "emplois-types de la donnée” où le terme 
 
 ```{r eval=require('DT'), tidy=FALSE, echo=FALSE}
 DT::datatable(
-  metiers_donnee,
-  fillContainer = FALSE, options = list(pageLength = 2))
+  metiers_donnee[1:13, c(1:5)],
+  rownames = FALSE,
+  colnames = c('Intitulé', 'Métier', 'BAP', 'FAP', 'Corps'),
+  fillContainer = FALSE,
+  options = list(pageLength = 3))
 ```
 
 ---
